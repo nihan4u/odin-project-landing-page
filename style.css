@@ -1,16 +1,23 @@
 body {
     margin: 0px;
+    padding: 0px;
     text-align: center;
     font-family: 'Roboto', arial;
 }
 
-.header {
+.navbar {
     display: flex;
     justify-content: space-between;
     background-color: #1F2937;
     color: white;
     align-items: center;
-    padding: 20px 0px 30px 20px;
+    padding: 20px 150px 30px 150px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
 }
 
 a {
@@ -18,9 +25,10 @@ a {
     color: grey;
 }
 
-ul {
+.navbar ul {
     list-style-type: none;
     display: flex;
+    gap: 30px;
 }
 
 .modal {
@@ -29,7 +37,14 @@ ul {
     background-color: #1F2937;
     color: white;
     align-items: center;
+    justify-content: center;
     padding: 100px;
+}
+
+.modal .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .title {
@@ -40,25 +55,60 @@ ul {
 
 .content {
     font-size: 18px;
-    color: #e5e7eb;
+    color: grey;
 }
 
 .sign-up {
-    font-size: 24px;
+    font-size: 14px;
     color: #F9F8FA; 
     background-color: #3882F6;
+    align-self: center;
+    border-radius: 10px;
+    border: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
 }
 
-img {
+.modal-image img {
     width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.header {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
 }
 
 .icons {
     display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 100px;
+    gap: 80px;
+    color: grey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.icons img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid #3882F6;
+    border-radius: 30px;
+}
+
+.text {
+    width: 200px;
 }
 
 .quote {
     background-color: #e5e7eb;
+    margin: 0px;
+    font-size: 36px;
+    color: #1F2937;
 }
 
 .footer {
